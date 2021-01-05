@@ -88,4 +88,5 @@ export const it: Translation = {
   twentyFourHours: '24 ore',
   uploadItems: 'Carica dati',
   wakeOn: 'Shortcut',
+  addLabel: 'Nuova etichetta',
 };

@@ -70,6 +70,7 @@ const clipboardAsObservable = interval(1000).pipe(
         richText: current.richText,
         dataURI: fromDataURL(current.image.toDataURL()),
         category: 'none',
+        label: [],
         type: isImage ? 'image' : 'text',
         formats: current.formats,
         createdAt: Date.now(),

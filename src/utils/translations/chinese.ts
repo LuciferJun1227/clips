@@ -90,6 +90,7 @@ export const chinese: {
     twentyFourHours: '一天',
     uploadItems: '本地上传',
     wakeOn: '热键',
+    addLabel: '新增标签',
   },
   'zh-TW': {
     about: '關於',
@@ -177,5 +178,6 @@ export const chinese: {
     twentyFourHours: '一天',
     uploadItems: '本地上傳',
     wakeOn: '熱鍵',
+    addLabel: '新增標籤',
   },
 };

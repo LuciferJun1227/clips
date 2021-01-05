@@ -84,4 +84,5 @@ export const en = {
   twentyFourHours: '24 hours',
   uploadItems: 'Upload items',
   wakeOn: 'Wake on',
+  addLabel: 'Add Label',
 };

@@ -89,4 +89,5 @@ export const ja: Translation = {
   twentyFourHours: '24時間',
   uploadItems: 'データのアップロード',
   wakeOn: 'ウェイク・オン',
+  addLabel: 'ラベルを追加',
 };

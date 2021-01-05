@@ -10,9 +10,11 @@ export function initEvents(mainWindow: BrowserWindow): void {
   });
   const maybeHide = () => {
     const appSettings = storeService.getAppSettings();
+
     if (appSettings && appSettings.system.blur) {
       mainWindow.hide();
     }
+    
   };
   mainWindow.on('blur', maybeHide);
 }

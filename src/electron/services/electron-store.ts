@@ -116,5 +116,5 @@ export const storeService = {
   removeUser,
   removeClips,
   removeCredentials,
-  clear,
+  clear
 };

@@ -12,6 +12,7 @@ export interface ClipDoc {
   richText: string;
   dataURI: string;
   category: 'none' | 'starred';
+  label: string[];
   type: 'text' | 'image';
   formats: string[];
   updatedAt: number;
@@ -27,6 +28,7 @@ export interface ClipSearchConditions {
     | 'plainText'
     | 'type'
     | 'category'
+    | 'label'
     | 'updatedAt'
     | 'createdAt'
     | '-plainText'
@@ -43,6 +45,7 @@ export interface SearchFilters {
   readonly richText: string;
   readonly dataURI: string;
   readonly category: 'none' | 'starred';
+  readonly label: string[];
   readonly type: 'text' | 'image';
   readonly formats: string[];
   readonly updatedAt: number;
@@ -56,6 +59,7 @@ export type ClipRegExp =
   | { readonly richText: { $regex: RegExp } }
   | { readonly dataURI: { $regex: RegExp } }
   | { readonly category: { $regex: RegExp } }
+  | { readonly label: { $regex: RegExp } }
   | { readonly type: { $regex: RegExp } }
   | { readonly formats: { $regex: RegExp } }
   | { readonly updatedAt: { $regex: RegExp } }
@@ -115,6 +119,13 @@ export const schema: RxJsonSchema<ClipDoc> = {
     },
     category: {
       type: 'string',
+    },
+    label: {
+      type: 'array',
+      uniqueItems: true,
+      items: {
+        type: 'string',
+      },
     },
     type: {
       type: 'string',

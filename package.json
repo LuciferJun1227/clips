@@ -1,11 +1,11 @@
 {
-  "name": "clips",
-  "version": "0.1.6",
+  "name": "my-clipboard",
+  "version": "1.0.0",
   "private": true,
-  "homepage": "https://infiniticlips.com",
+  "homepage": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/azure06/clips.git"
+    "url": "git+https://github.com/LuciferJun1227/clips.git"
   },
   "keywords": [
     "clipboard",
@@ -17,7 +17,7 @@
     "mac"
   ],
   "bugs": {
-    "url": "https://github.com/azure06/clips/issues"
+    "url": "https://github.com/LuciferJun1227/clips/issues"
   },
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -25,6 +25,8 @@
     "lint": "eslint -c .eslintrc.js --ext ts,vue ./src",
     "lint:fix": "eslint -c .eslintrc.js --ext ts,vue ./src --fix",
     "electron:build": "vue-cli-service electron:build -mw",
+    "electron:build-macos": "vue-cli-service electron:build -m",
+    "electron:build-win": "vue-cli-service electron:build -w",
     "electron:publish": "npm run electron:build -- -p always",
     "electron:serve": "vue-cli-service electron:serve",
     "postinstall": "electron-builder install-app-deps",
@@ -57,7 +59,7 @@
     "socket.io": "^2.3.0",
     "socket.io-client": "^2.3.1",
     "universal-analytics": "^0.4.23",
-    "uuidv4": "^6.2.4",
+    "uuidv4": "^6.2.6",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
     "vue-dompurify-html": "^2.3.0",
